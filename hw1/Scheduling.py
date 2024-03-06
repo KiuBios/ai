@@ -42,10 +42,6 @@ slots = [
 'B51', 'B52', 'B53', 'B54', 'B55', 'B56', 'B57',
 ]
 
-cols = 7
-
-#s = [0] * len(slots)
-
 def randSlot() :
     return randint(0, len(slots)-1)
 
