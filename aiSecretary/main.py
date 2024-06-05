@@ -43,7 +43,7 @@ agent_with_chat_history = RunnableWithMessageHistory(
     history_messages_key="chat_history",
 )
 agent_with_chat_history.invoke(
-    {"input": "hi! my name is Miquella"},
+    {"input": "hi! my name is Miquella, please speak to me in traditional Chinese"},
     config={"configurable": {"session_id": "<foo>"}},
 )
 
