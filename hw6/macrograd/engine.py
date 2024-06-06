@@ -35,9 +35,9 @@ class Tensor:
         out = Tensor(self.data * other.data, (self, other), '*')
 
         def _backward():
-            # print('self.shape=', self.shape)
-            # print('other.shape=', other.shape)
-            # print('out.shape=', out.shape)
+            print('self.shape=', self.shape)
+            print('other.shape=', other.shape)
+            print('out.shape=', out.shape)
             self.grad += other.data * out.grad
             other.grad += self.data * out.grad
                         
